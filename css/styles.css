@@ -4,12 +4,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-flow: column;
     margin: 0;
-    background-image: url('../img/bg.jpg');
+    background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     color: #ecf0f1;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+#controls {
+    text-align: center;
+    margin-top: 10px;
+}
+#restart {
+    display: none;
+}
+#alignMessage {
+    color: red;
 }
 
 #game {
